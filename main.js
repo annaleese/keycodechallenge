@@ -1,13 +1,15 @@
-const heading = element.getElementById("heading");
-const keyValue = element.getElementById("keyValue");
-const keyCode = element.getElementById("keyCode");
-const charCode = element.getElementById("charCode");
+Object.addEventListener("keydown", (event) => {
+    console.log(event)
+    document.getElementById('keyValue').textContent = event.key
+})
 
-element.addEventListener("keypress", (x) => {
-keyValue.textContent = `${x.key}`
-keyCode.textContent = `${x.code}`
-charCode.textContent = `${x.charCode}`
-heading.textContent = `${x.charCode}`
+Object.addEventListener("keydown", (event) => {
+    console.log(event)
+    document.getElementById('keyCode').textContent = event.code
+})
 
+Object.addEventListener("keydown", (event) => {
+    console.log(event)
+    document.getElementById('charCode').textContent = event.charCode
 })
 
