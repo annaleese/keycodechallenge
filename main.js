@@ -1,15 +1,19 @@
+let keyValue = document.getElementById("keyValue");
+let keyCode = document.getElementById("keyCode");
+let charCode = document.getElementById("charCode");
+
 Object.addEventListener("keydown", (event) => {
     console.log(event)
-    document.getElementById('keyValue').textContent = event.key
+    ('keyValue').InnerHTML = event.key
 })
 
 Object.addEventListener("keydown", (event) => {
     console.log(event)
-    document.getElementById('keyCode').textContent = event.code
+    ('keyCode').InnerHTML = event.code
 })
 
 Object.addEventListener("keydown", (event) => {
     console.log(event)
-    document.getElementById('charCode').textContent = event.charCode
+    ('charCode').InnerHTML = event.charCode
 })
 
