@@ -1,19 +1,23 @@
 let keyValue = document.getElementById("keyValue");
 let keyCode = document.getElementById("keyCode");
 let charCode = document.getElementById("charCode");
+let heading = document.getElementById ("Heading")
 
-Object.addEventListener("keydown", (event) => {
+window.addEventListener("keydown", (event) => {
     console.log(event)
-    ('keyValue').InnerHTML = event.key
+    keyValue.innerHTML = event.key
+    keyValue.innerHTML = event.code
+    keyValue.innerHTML = event.keyCode
+    Heading.innerHTML = event.keyCode
 })
 
-Object.addEventListener("keydown", (event) => {
+window.addEventListener("keydown", (event) => {
     console.log(event)
-    ('keyCode').InnerHTML = event.code
+    keyCode.innerHTML = event.code
 })
 
-Object.addEventListener("keydown", (event) => {
+window.addEventListener("keydown", (event) => {
     console.log(event)
-    ('charCode').InnerHTML = event.charCode
+    charCode.innerHTML = event.charCode
 })
 
